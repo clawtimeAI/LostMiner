@@ -1,0 +1,23 @@
+{
+  "name": "@aigame/server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js",
+    "build": "echo \"Nothing to build for server (JS)\"",
+    "db:init": "node scripts/dbInit.js",
+    "gen:maps": "node tools/gen-maps.cjs"
+  },
+  "dependencies": {
+    "colyseus": "^0.15.19",
+    "@colyseus/schema": "^2.0.34",
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "pg": "^8.11.5",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1"
+  }
+}
